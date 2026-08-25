@@ -259,9 +259,11 @@ body {
 .asset-row em { font-style:normal; font-size:12px; color:#fff; white-space:nowrap; }
 .new-badge { display:none!important; }
 .asset-list-card footer { margin-top:14px; text-align:center; color:rgba(255,255,255,.62); font-size:10px; letter-spacing:.08em; }
+.asset-panel { min-height:auto; padding-top:18px; padding-bottom:18px; scroll-snap-align:none; }
 @media(max-width:640px){
   .asset-list-card{padding:20px 14px 16px}.asset-list-card h2{font-size:27px}.asset-rows{gap:6px}
   .asset-row{min-height:49px;grid-template-columns:40px 1fr auto;padding:7px 9px}.asset-row strong{font-size:19px}.asset-row span{font-size:10px}.asset-row em{font-size:10px}
+  .asset-panel{padding-top:8px;padding-bottom:8px}
 }
 
 </style>
@@ -270,7 +272,7 @@ body {
 <img class="share-preview" src="share-cover.jpg" alt="交通银行广州黄埔支行优质资产推介" />
 <div class="hint">交通银行广州黄埔支行｜优质资产推介 H5</div>
 <nav class="nav-dots">
-  <a href="#panel-1" class="dot" title="封面"><span>1</span></a><a href="#panel-2" class="dot" title="资产概览"><span>2</span></a><a href="#panel-3" class="dot" title="资产清单（1-9）"><span>3</span></a><a href="#panel-4" class="dot" title="资产清单（10-17）"><span>4</span></a><a href="#map-group-1" class="dot" title="第一组区位"><span>5</span></a><a href="#map-group-2" class="dot" title="第二组区位"><span>6</span></a><a href="#map-group-3" class="dot" title="第三组区位"><span>7</span></a><a href="#map-group-4" class="dot" title="第四组区位"><span>8</span></a><a href="#panel-5" class="dot" title="资产价值亮点"><span>9</span></a>
+  <a href="#panel-1" class="dot" title="封面"><span>1</span></a><a href="#panel-2" class="dot" title="资产概览"><span>2</span></a><a href="#panel-3" class="dot" title="广州资产清单（1-11）"><span>3</span></a><a href="#panel-4" class="dot" title="清远资产清单（12-17）"><span>4</span></a><a href="#map-group-1" class="dot" title="第一组区位"><span>5</span></a><a href="#map-group-2" class="dot" title="第二组区位"><span>6</span></a><a href="#map-group-3" class="dot" title="第三组区位"><span>7</span></a><a href="#map-group-4" class="dot" title="第四组区位"><span>8</span></a><a href="#panel-5" class="dot" title="资产价值亮点"><span>9</span></a>
 </nav>
 
 
@@ -286,12 +288,12 @@ body {
         </div>
     </section>
     
-    <section class="panel" id="panel-3">
-        <div class="asset-list-card"><header><h2>资产项目清单</h2><p>广州资产（1–9）</p></header><div class="asset-rows"><div class="asset-row"><strong>01</strong><span>海珠区·新港东路雅宁街46号60*房</span><em>142.568㎡</em></div><div class="asset-row"><strong>02</strong><span>天河区·五山路271号40*房</span><em>97.08㎡</em></div><div class="asset-row"><strong>03</strong><span>天河区·五山路271号50*房</span><em>87.77㎡</em></div><div class="asset-row"><strong>04</strong><span>天河区·五山路271号70*房</span><em>97.08㎡</em></div><div class="asset-row"><strong>05</strong><span>天河区·五山路271号80*房</span><em>81.77㎡</em></div><div class="asset-row"><strong>06</strong><span>天河区·五山路271号80*房</span><em>97.08㎡</em></div><div class="asset-row"><strong>07</strong><span>天河区·五山路271号90*房</span><em>102.83㎡</em></div><div class="asset-row"><strong>08</strong><span>天河区·五山路281号90*房</span><em>97.56㎡</em></div><div class="asset-row"><strong>09</strong><span>花都区·云山大道2号之二6栋100*房</span><em>117.67㎡</em></div></div><footer>具体资产信息及处置规则以正式公告为准</footer></div>
+    <section class="panel asset-panel" id="panel-3">
+        <div class="asset-list-card"><header><h2>资产项目清单</h2><p>广州资产（1–11）</p></header><div class="asset-rows"><div class="asset-row"><strong>01</strong><span>海珠区·新港东路雅宁街46号60*房</span><em>142.568㎡</em></div><div class="asset-row"><strong>02</strong><span>天河区·五山路271号40*房</span><em>97.08㎡</em></div><div class="asset-row"><strong>03</strong><span>天河区·五山路271号50*房</span><em>87.77㎡</em></div><div class="asset-row"><strong>04</strong><span>天河区·五山路271号70*房</span><em>97.08㎡</em></div><div class="asset-row"><strong>05</strong><span>天河区·五山路271号80*房</span><em>81.77㎡</em></div><div class="asset-row"><strong>06</strong><span>天河区·五山路271号80*房</span><em>97.08㎡</em></div><div class="asset-row"><strong>07</strong><span>天河区·五山路271号90*房</span><em>102.83㎡</em></div><div class="asset-row"><strong>08</strong><span>天河区·五山路281号90*房</span><em>97.56㎡</em></div><div class="asset-row"><strong>09</strong><span>花都区·云山大道2号之二6栋100*房</span><em>117.67㎡</em></div><div class="asset-row"><strong>10</strong><span>增城区·广深大道西228号3幢120*房</span><em>101.66㎡</em></div><div class="asset-row"><strong>11</strong><span>增城区·石新大道168号14幢100*房</span><em>67.76㎡</em></div></div><footer>具体资产信息及处置规则以正式公告为准</footer></div>
     </section>
     
-    <section class="panel" id="panel-4">
-        <div class="asset-list-card"><header><h2>资产项目清单</h2><p>广州 / 清远资产（10–17）</p></header><div class="asset-rows"><div class="asset-row"><strong>10</strong><span>增城区·广深大道西228号3幢120*房</span><em>101.66㎡</em></div><div class="asset-row"><strong>11</strong><span>增城区·石新大道168号14幢100*房</span><em>67.76㎡</em></div><div class="asset-row"><strong>12</strong><span>清远市·美林湖国际社区怡景湾6-1幢14层0*号</span><em>137.53㎡</em></div><div class="asset-row"><strong>13</strong><span>清远市·美林湖国际社区恒景湾十栋120*</span><em>138㎡</em></div><div class="asset-row"><strong>14</strong><span>清远市·美林湖国际社区花漫湾13-2幢90*</span><em>143㎡</em></div><div class="asset-row"><strong>15</strong><span>清远市·众合路1号保利麓湖花园1号310*</span><em>78㎡</em></div><div class="asset-row"><strong>16</strong><span>清远市·众合路1号保利麓湖花园1号楼70*</span><em>96㎡</em></div><div class="asset-row"><strong>17</strong><span>清远市·众合路1号保利麓湖花园2号楼14层0*号</span><em>128.58㎡</em></div></div><footer>具体资产信息及处置规则以正式公告为准</footer></div>
+    <section class="panel asset-panel" id="panel-4">
+        <div class="asset-list-card"><header><h2>资产项目清单</h2><p>清远资产（12–17）</p></header><div class="asset-rows"><div class="asset-row"><strong>12</strong><span>清远市·美林湖国际社区怡景湾6-1幢14层0*号</span><em>137.53㎡</em></div><div class="asset-row"><strong>13</strong><span>清远市·美林湖国际社区恒景湾十栋120*</span><em>138㎡</em></div><div class="asset-row"><strong>14</strong><span>清远市·美林湖国际社区花漫湾13-2幢90*</span><em>143㎡</em></div><div class="asset-row"><strong>15</strong><span>清远市·众合路1号保利麓湖花园1号310*</span><em>78㎡</em></div><div class="asset-row"><strong>16</strong><span>清远市·众合路1号保利麓湖花园1号楼70*</span><em>96㎡</em></div><div class="asset-row"><strong>17</strong><span>清远市·众合路1号保利麓湖花园2号楼14层0*号</span><em>128.58㎡</em></div></div><footer>具体资产信息及处置规则以正式公告为准</footer></div>
     </section>
 
     <section class="panel" id="map-group-1">
