@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="活动时间：8—9月每周五、周六晚。有热爱，就有星朋友。">
+<meta name="theme-color" content="#00224f">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>有热爱，就有星朋友</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animations.css">
+<script src="pages.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main id="viewer" aria-label="有热爱，就有星朋友，五页活动介绍" tabindex="0">
+<div id="slides"></div>
+<button id="music" class="music" aria-label="播放背景音乐" aria-pressed="false">♫</button>
+<button id="previous" class="previous" aria-label="上一页">⌃</button>
+<button id="next" class="next" aria-label="下一页">⌃</button>
+<output id="counter" aria-live="polite">1 / 5</output>
+<div id="loading" role="status">正在加载…</div>
+<div id="error" role="alert" hidden>图片加载失败，请刷新页面重试。</div>
+</main>
+<audio id="audio" src="assets/1788418978900-z96zrsx1ca.mp3" loop preload="none"></audio>
+<noscript>请开启 JavaScript 以浏览活动页面。</noscript>
+</body>
+</html>
